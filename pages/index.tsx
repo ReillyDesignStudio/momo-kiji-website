@@ -227,8 +227,8 @@ output = model.predict(input_data)`}
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/ReillyDesignStudio/momo-kiji/discussions" className="hover:text-white">
-                    Discussions
+                  <a href="https://discord.gg/DHRbKbzr" className="hover:text-white">
+                    Community (Discord)
                   </a>
                 </li>
                 <li>
