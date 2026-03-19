@@ -170,7 +170,7 @@ output = model.predict(input_data)`}
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a
-              href="https://momo-kiji.readthedocs.io"
+              href="https://github.com/ReillyDesignStudio/momo-kiji/blob/main/docs/source/index.rst"
               className="px-6 py-3 bg-white text-peach-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Read Docs →
