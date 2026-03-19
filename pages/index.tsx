@@ -46,7 +46,7 @@ export default function Home() {
               Stop letting ANE go unused. Compile any model, target ANE directly, get 10x efficiency.
             </p>
             <div className="flex gap-4">
-              <a href="https://momo-kiji.readthedocs.io" className="btn-primary">
+              <a href="https://github.com/ReillyDesignStudio/momo-kiji#readme" className="btn-primary">
                 Get Started →
               </a>
               <a href="https://github.com/ReillyDesignStudio/momo-kiji" className="btn-secondary">
@@ -207,7 +207,7 @@ output = model.predict(input_data)`}
                   </a>
                 </li>
                 <li>
-                  <a href="https://momo-kiji.readthedocs.io" className="hover:text-white">
+                  <a href="https://github.com/ReillyDesignStudio/momo-kiji#readme" className="hover:text-white">
                     Documentation
                   </a>
                 </li>
