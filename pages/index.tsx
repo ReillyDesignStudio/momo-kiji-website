@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { trackExternalClick, trackGitHubAction, trackDiscordJoin } from "../lib/analytics";
 
 export default function Home() {
   return (
