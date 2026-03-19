@@ -138,8 +138,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Quick Start */}
-      <section className="py-20 bg-white">
+      {/* Quick Start / Docs */}
+      <section id="docs" className="py-20 bg-white">
         <div className="container-wide">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Quick Start</h2>
           <div className="bg-gray-900 text-gray-100 p-6 rounded-lg overflow-x-auto">

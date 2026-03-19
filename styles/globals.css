@@ -22,29 +22,40 @@ a {
   cursor: pointer;
 }
 
-/* Nav links - underline on hover only */
+/* Nav links - strong hover state */
 nav a {
   color: #374151;
-  transition: text-decoration 0.2s ease, color 0.2s ease;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 nav a:hover {
   text-decoration: underline;
   color: #d4693a;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
-/* Inline text links - underline always visible */
+/* Inline text links - VERY OBVIOUS */
 .content a,
-section a:not(.btn-primary):not(.btn-secondary) {
-  color: #d4693a;
-  text-decoration: underline;
-  transition: opacity 0.2s ease;
+section a:not(.btn-primary):not(.btn-secondary),
+p a:not(.btn-primary):not(.btn-secondary) {
+  color: #ffffff;
+  background-color: #d4693a;
+  text-decoration: none;
+  padding: 0.125rem 0.35rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-block;
 }
 
 .content a:hover,
-section a:not(.btn-primary):not(.btn-secondary):hover {
-  opacity: 0.8;
-  text-decoration: underline;
+section a:not(.btn-primary):not(.btn-secondary):hover,
+p a:not(.btn-primary):not(.btn-secondary):hover {
+  background-color: #a83d2a;
+  transform: scale(1.02);
 }
 
 /* Footer links - underline on hover */
