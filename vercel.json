@@ -4,10 +4,6 @@
   "env": {
     "NEXT_PUBLIC_GA_ID": "@TO_BE_SET"
   },
-  "domains": [
-    "momo-kiji.dev",
-    "www.momo-kiji.dev"
-  ],
   "git": {
     "deploymentEnabled": {
       "main": true
