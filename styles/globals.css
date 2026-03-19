@@ -22,32 +22,40 @@ a {
   cursor: pointer;
 }
 
-/* Nav links - strong hover state */
+/* ALL links - underlined for accessibility */
+a:not(.btn-primary):not(.btn-secondary) {
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+/* Nav links - underline always visible */
 nav a {
   color: #374151;
   font-weight: 500;
-  transition: all 0.2s ease;
-  position: relative;
+  text-decoration: underline;
+  text-decoration-color: #d4693a;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
 }
 
 nav a:hover {
-  text-decoration: underline;
   color: #d4693a;
   text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
 }
 
-/* Inline text links - VERY OBVIOUS */
+/* Inline text links - underline + background for emphasis */
 .content a,
 section a:not(.btn-primary):not(.btn-secondary),
 p a:not(.btn-primary):not(.btn-secondary) {
   color: #ffffff;
   background-color: #d4693a;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
   padding: 0.125rem 0.35rem;
   border-radius: 0.25rem;
   font-weight: 600;
-  transition: all 0.2s ease;
   display: inline-block;
 }
 
@@ -58,16 +66,19 @@ p a:not(.btn-primary):not(.btn-secondary):hover {
   transform: scale(1.02);
 }
 
-/* Footer links - underline on hover */
-footer a {
+/* Footer links - underline always visible */
+footer a:not(.btn-primary):not(.btn-secondary) {
   color: #f3f4f6;
-  text-decoration: none;
-  transition: text-decoration 0.2s ease, color 0.2s ease;
+  text-decoration: underline;
+  text-decoration-color: #f3f4f6;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: all 0.2s ease;
 }
 
-footer a:hover {
-  text-decoration: underline;
+footer a:not(.btn-primary):not(.btn-secondary):hover {
   color: #ffffff;
+  text-decoration-thickness: 2px;
 }
 
 button {
