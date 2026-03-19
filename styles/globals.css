@@ -22,14 +22,40 @@ a {
   cursor: pointer;
 }
 
+/* Nav links - underline on hover only */
+nav a {
+  color: #374151;
+  transition: text-decoration 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #d4693a;
+}
+
+/* Inline text links - underline always visible */
+.content a,
+section a:not(.btn-primary):not(.btn-secondary) {
+  color: #d4693a;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.content a:hover,
+section a:not(.btn-primary):not(.btn-secondary):hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Footer links - underline on hover */
 footer a {
   color: #f3f4f6;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease, color 0.2s ease;
 }
 
 footer a:hover {
-  border-bottom: 1px solid #f3f4f6;
+  text-decoration: underline;
   color: #ffffff;
 }
 
